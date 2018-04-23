@@ -63,7 +63,7 @@ public class PI {
 
                                         //PRIMEIRA OPCAO CERTA - VENDER
                                         
-                                        System.out.println("O que você escolhe fazer com a máquina??");
+                                        System.out.println("O que você escolhe fazer com a máquina?");
                                         op1 = entrada.nextInt();
 
                                         switch (op1) {
@@ -72,7 +72,7 @@ public class PI {
                                         break;
                                 }
                                 if (i == 0) {
-                                    System.out.println("Tente novamente!!");
+                                    System.out.println("Tente novamente!");
                                 }
                                 break;
                             }
