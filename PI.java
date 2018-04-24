@@ -103,6 +103,7 @@ public class PI {
 			}
 	}
 	
+	
 	//partDay
 
 	static void caipirinha(){
@@ -128,7 +129,7 @@ public class PI {
 		case 3:
 			System.out.println("Você gastou muito na compra da bebida, e os alunos não aceitavam pagar mais caro. Acabou perdendo dinheiro com o investimento");
 			pontuacao = pontuacao -3;
-			System.out.println("Você ganhou 3 pontos!");
+			System.out.println("Você perdeu 3 pontos!");
 			System.out.println("Sua pontuação é: " + pontuacao);
 			break;
 		}
@@ -172,8 +173,33 @@ public class PI {
 			System.out.println("Sua pontuação é: " + pontuacao);
 			break;
 		}
+		
+		/*outra pergunta*/
+		
+		System.out.println("Quanto você decide cobrar por copo? \r\n" + "1. 5$\r\n" + "2. 10$\r\n" + "");
+		op1 = entrada.nextInt();
+		switch (op1){
+		case 1:
+			System.out.println(" Você escolheu cobrar 5$ por copo. Apesar do valor menor, isso atraía mais pessoas e ocasionou um maior fluxo de vendas.");
+			pontuacao = pontuacao +3;
+			System.out.println("Você ganhou 3 pontos!");
+			System.out.println("Sua pontuação é: " + pontuacao);
+			break;
+		case 2:
+			System.out.println(" Você escolheu cobrar 10$ por copo. O lucro era maior por venda, porém menos alunos compravam e menos pessoas divulgavam o seu negócio.");
+			op1 = entrada.nextInt();
+			pontuacao = pontuacao -2;
+			System.out.println("Você perdeu 2 pontos!");
+			System.out.println("Sua pontuação é: " + pontuacao);
+			break;
+		}
+		
+		
+			
+			
+		}
 
-	}
+	
 	
 	//partDay
 
