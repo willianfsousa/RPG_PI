@@ -104,100 +104,132 @@ public class PI {
 	}
 	
 	
-	//partDay
+	// partDay
 
-	static void caipirinha(){
-		System.out.println("Você decide usar os limões para preparar drinks e vendê-los na faculdade. Com qual bebida alcoólica você decide preparar as caipirinhas?\n" +
-				"1. Vodka barata. \n" +
-				"2. Cachaça forte. \n" +
-				"3. Saquê.");
-		op1=entrada.nextInt();
+	static void caipirinha() {
+		System.out.println(
+				"Você decide usar os limões para preparar drinks e vendê-los na faculdade. Com qual bebida alcoólica você decide preparar as caipirinhas?\n"
+						+ "1. Vodka barata. \n" + "2. Cachaça forte. \n" + "3. Saquê.");
+		op1 = entrada.nextInt();
 
-		switch (op1){
+		switch (op1) {
 		case 1:
-			System.out.println("Você escolheu usar vodka barata. Foi a preferida dos alunos, e você gastou pouco dinheiro para comprar a bebida. Boa escolha.");
+			System.out.println(
+					"Você escolheu usar vodka barata. Foi a preferida dos alunos, e você gastou pouco dinheiro para comprar a bebida. Boa escolha.");
 			pontuacao = pontuacao + 3;
 			System.out.println("Você ganhou 3 pontos!");
 			System.out.println("Sua pontuação é: " + pontuacao);
-			break ;
+			break;
 		case 2:
-			System.out.println(" Você escolheu usar cachaça. A maioria dos alunos achou a bebida muito forte, e não voltaram para comprar mais.");
+			System.out.println(
+					" Você escolheu usar cachaça. A maioria dos alunos achou a bebida muito forte, e não voltaram para comprar mais.");
 			pontuacao++;
 			System.out.println("Você ganhou 1 ponto!");
 			System.out.println("Sua pontuação é: " + pontuacao);
 			break;
 		case 3:
 			System.out.println("Você gastou muito na compra da bebida, e os alunos não aceitavam pagar mais caro. Acabou perdendo dinheiro com o investimento");
-			pontuacao = pontuacao -3;
+			pontuacao = pontuacao - 3;
 			System.out.println("Você perdeu 3 pontos!");
 			System.out.println("Sua pontuação é: " + pontuacao);
 			break;
 		}
 
-		System.out.println("Onde você decide abrir seu ponto de vendas? \n 1. Escondido, para a administração da faculdade não te localizar. \n" +
-				"2. Exposta, para atingir o maior número de alunos");
+		System.out.println(
+				"Onde você decide abrir seu ponto de vendas? \n 1. Escondido, para a administração da faculdade não te localizar."
+						+ "\n2. Exposta, para atingir o maior número de alunos");
 		op1 = entrada.nextInt();
 
-		switch (op1){
+		switch (op1) {
 		case 1:
-			System.out.println("Você escolheu agir com precaução. Menos alunos ficaram sabendo do seu empreendimento, porém você não enfrentou nenhum problema com a administração da faculdade.");
+			System.out.println(
+					"Você escolheu agir com precaução. Menos alunos ficaram sabendo do seu empreendimento, porém você não enfrentou nenhum problema com a administração da faculdade.");
 			pontuacao = pontuacao + 3;
 			System.out.println("Você ganhou 3 pontos!");
 			System.out.println("Sua pontuação é: " + pontuacao);
 			break;
 		case 2:
-			System.out.println(" Você escolheu divulgar o seu negócio para o maior número de alunos. Ao final do dia, a administração já estava ciente do seu negócio, e você ganhou uma advertência permanente no seu histórico, mas isso não afetou suas vendas.");
-			pontuacao = pontuacao +5;
+			System.out.println(
+					" Você escolheu divulgar o seu negócio para o maior número de alunos. Ao final do dia, a administração já estava ciente do seu negócio, e você ganhou uma advertência permanente no seu histórico, mas isso não afetou suas vendas.");
+			pontuacao = pontuacao + 5;
 			System.out.println("Você ganhou 5 pontos!");
 			System.out.println("Sua pontuação é: " + pontuacao);
 			break;
 		}
 
 		// adicionando outra pergunta
-		System.out.println("Você decide pedir identificação para vender apenas para maiores de idade, ou oferece para todos a bebida? \n1. Decide pedir identificação.\r\n" + 
-				"\n2. Decide vender para todos" + 
-				"");
+		System.out.println(
+				"Você decide pedir identificação para vender apenas para maiores de idade, ou oferece para todos a bebida? \n1.1 Decide pedir identificação.\r\n"
+						+ "\n2.2 Decide vender para todos" + "");
 		op1 = entrada.nextInt();
 
-		switch (op1){
+		switch (op1) {
 		case 1:
-			System.out.println("Você escolheu pedir identificação. Ao final do dia sua consciência estava limpa, porém você perdeu uma grande quantidade de vendas.");
+			System.out.println(
+					"Você escolheu pedir identificação. Ao final do dia sua consciência estava limpa, porém você perdeu uma grande quantidade de vendas.");
 			pontuacao = pontuacao + 1;
 			System.out.println("Você ganhou 1 pontos!");
 			System.out.println("Sua pontuação é: " + pontuacao);
 			break;
 		case 2:
-			System.out.println("Você decide vender para todos os alunos. Conseguiu um maior número de clientes sem nenhuma repercussão negativa. Moralmente errado, mas financeiramente positivo.");
-			pontuacao = pontuacao +3;
+			System.out.println(
+					"Você decide vender para todos os alunos. Conseguiu um maior número de clientes sem nenhuma repercussão negativa. Moralmente errado, mas financeiramente positivo.");
+			pontuacao = pontuacao + 3;
 			System.out.println("Você ganhou 3 pontos!");
 			System.out.println("Sua pontuação é: " + pontuacao);
 			break;
 		}
-		
-		/*outra pergunta*/
-		
-		System.out.println("Quanto você decide cobrar por copo? \r\n" + "1. 5$\r\n" + "2. 10$\r\n" + "");
+
+		/* outra pergunta */
+
+		System.out.println("Quanto você decide cobrar por copo? \r\n" + "1 5$\r\n" + "2 10$\r\n" + "");
 		op1 = entrada.nextInt();
-		switch (op1){
+		switch (op1) {
 		case 1:
-			System.out.println(" Você escolheu cobrar 5$ por copo. Apesar do valor menor, isso atraía mais pessoas e ocasionou um maior fluxo de vendas.");
-			pontuacao = pontuacao +3;
+			System.out.println(
+					" Você escolheu cobrar 5$ por copo. Apesar do valor menor, isso atraía mais pessoas e ocasionou um maior fluxo de vendas.");
+			pontuacao = pontuacao + 3;
 			System.out.println("Você ganhou 3 pontos!");
 			System.out.println("Sua pontuação é: " + pontuacao);
 			break;
 		case 2:
-			System.out.println(" Você escolheu cobrar 10$ por copo. O lucro era maior por venda, porém menos alunos compravam e menos pessoas divulgavam o seu negócio.");
+			System.out.println(
+					" Você escolheu cobrar 10$ por copo. O lucro era maior por venda, porém menos alunos compravam e menos pessoas divulgavam o seu negócio.");
 			op1 = entrada.nextInt();
-			pontuacao = pontuacao -2;
+			pontuacao = pontuacao - 2;
 			System.out.println("Você perdeu 2 pontos!");
 			System.out.println("Sua pontuação é: " + pontuacao);
 			break;
 		}
-		
-		
+
+		// pergunta continução
+
+		System.out.println(
+				"Qual promoção você escolhe fazer?" + " \n1 Traga dois amigos para consumir e ganhe uma bebida grátis."
+						+ "\n" + "2. Se beber 5 copos ganhe um Uber para casa.");
+		op1 = entrada.nextInt();
+		switch (op1) {
+		case 1:
+			System.out.println("Você escolheu a primeira promoção. Ela foi bem aceita e rapidamente os alunos\r\n" + 
+					"espalhavam a notícia para os colegas. O seu negócio disparou e rapidamente você havia\r\n" + 
+					"vendido todo o estoque.");
+			pontuacao = pontuacao + 10;
+			System.out.println("Você ganhou 10 pontos!");
+			System.out.println("Sua pontuação é: " + pontuacao);
+			break;
+		case 2:
+			System.out.println("Você escolheu a segunda promoção. Você não considerou a distância da casa de todos\r\n" + 
+					"os alunos, e apesar do maior número de vendas para cada cliente, por vezes o valor das\r\n" + 
+					"corridas não compensava o lucro e você perdia dinheiro.");
+			pontuacao = pontuacao - 5;
+			System.out.println("Você perdeu 5 pontos!");
+			System.out.println("Sua pontuação é: " + pontuacao);
+			break;
 			
 			
 		}
+
+	}
 
 	
 	
@@ -231,6 +263,7 @@ public class PI {
 						break;
 					case 3:
 						// ESCOLHA CAIPIRINHA
+						caipirinha();
 						break;
 					case 4:
 						// ESCOLHA BARRAQUINHA LIMONADA
